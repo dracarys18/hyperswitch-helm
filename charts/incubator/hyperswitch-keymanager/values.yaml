@@ -19,7 +19,7 @@ server:
 
 # Values for database (postgresql).
 postgresql:
-  enabled: true
+  enabled: false
   nameOverride: locker-db
   global:
     postgresql:
