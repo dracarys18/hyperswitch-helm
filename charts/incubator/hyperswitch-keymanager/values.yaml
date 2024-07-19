@@ -8,6 +8,9 @@ global:
   image: juspaydotin/hyperswitch-encryption-service:0.1.1
   annotations: {}
 
+autoscaling:
+  enabled: false
+
 server:
   secrets:
     iam_role: iam_role
