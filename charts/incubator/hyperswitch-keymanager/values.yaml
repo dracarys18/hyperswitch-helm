@@ -12,6 +12,7 @@ autoscaling:
   enabled: false
 
 server:
+  image: juspaydotin/hyperswitch-encryption-service:0.1.1
   secrets:
     iam_role: iam_role
     region: us-east-1
