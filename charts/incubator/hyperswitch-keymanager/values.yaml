@@ -14,6 +14,7 @@ autoscaling:
 server:
   image: juspaydotin/hyperswitch-encryption-service:0.1.1
   secrets:
+    key_id: sample_keyid
     iam_role: iam_role
     region: us-east-1
     ca_cert: sample_cert
@@ -51,7 +52,7 @@ external:
 # Values for the database migration job
 initDB:
   # Should we run the migrations on the database
-  enable: true
+  enable: false
   checkPGisUp:
     image: postgres:16-alpine3.19
     maxAttempt: 30
